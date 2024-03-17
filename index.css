@@ -1,0 +1,100 @@
+.carousel-indicators {
+  top: 0;
+}
+
+.direction,
+.contactus {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+#call {
+  border-radius: 20px;
+}
+
+.production {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.production .container {
+  top: -80px;
+  box-shadow: 0px 0px 10px gray;
+  position: absolute;
+  background-color: #fff;
+}
+
+#secondMain {
+  display: center;
+}
+#about {
+  margin-top: 150px;
+}
+
+#morephoto {
+  color: blue;
+  font-weight: bold;
+  border: none;
+}
+
+footer {
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#carouselimg {
+  width: auto;
+  height: 600px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cardimg {
+  width: calc(
+    33.33% - 20px
+  ); /* Adjust width to fit 3 images in a row with 10px margin */
+  height: 300px; /* Maintain aspect ratio */
+  border: 2px solid #ff3d0036;
+  box-shadow: 4px 7px 7px 0px #00000042;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+}
+
+.cardimg:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+
+/* /////////////////////////////////////// */
+/* Added media queries for different screen sizes */
+@media screen and (max-width: 767px) {
+    #carouselimg {
+        height: 250px;
+    }
+    .production .container {
+        top: -50px;
+    }
+    .cardimg {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #carouselimg {
+        height: 200px;
+    }
+    .cardimg {
+        width: 100%;
+    }
+}
